@@ -12,7 +12,7 @@ price = [i.text for i in price_html]
 availability_html = soup.find_all(class_="instock availability")
 availability = [k.text for k in availability_html]
 dictionary = {
-    "book":book,"price":price,"Availability":availability
+    "book":book,"price":price,"availability":availability
 }
 df = pd.DataFrame(dictionary)
 print(df)
