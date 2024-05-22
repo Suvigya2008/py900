@@ -12,11 +12,7 @@ price = [i.text for i in price_html]
 availability_html = soup.find_all(class_="instock availability")
 availability = [k.text.strip() for k in availability_html]
 dictionary = {
-<<<<<<< HEAD
-    "book":book,"price":price,"availability":availability
-=======
-    "book": book,"price": price,"Availability": availability
->>>>>>> acd3202f7ba9cac5cf768d5c69fa697a1d463b14
+    "Books":book,"Prices":price,"Availability":availability
 }
 df = pd.DataFrame(dictionary)
 print(df)
